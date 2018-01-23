@@ -29,4 +29,16 @@ end
 def show
   @portfolio_item = Portfolio.find(params[:id])
 end
+
+def destroy
+
+  @portfolio_item = Portfolio.find(params[:id])
+
+  @portfolio_item.destroy
+
+  respond_to do |format|
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
+  end
+end
+
 end
