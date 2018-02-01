@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   before_action :set_copyright
 
   def set_copyright
-    @copyright = HyoTechViewTool::Renderer.copyright 'Michael Orr', 'All rights reserved'
+    @copyright = DevcampViewTool::Renderer.copyright 'Michael Orr', 'All rights reserved'
   end
 end
