@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
     ]
   end
 
@@ -68,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Michael Orr Portfolio", sticky: false)
+    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
   end
 
 end
